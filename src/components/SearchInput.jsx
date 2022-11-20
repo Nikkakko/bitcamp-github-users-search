@@ -15,7 +15,9 @@ const SearchInput = ({ searchValue, handleChange, handleSubmit, userData, error 
         />
       </InputForm>
       <NoResults>{error && error}</NoResults>
-      <SearchButton>Search</SearchButton>
+      <SearchButton type='submit' onClick={handleSubmit}>
+        Search
+      </SearchButton>
     </SearchInputContainer>
   );
 };
